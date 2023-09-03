@@ -6,7 +6,7 @@ export default function Home() {
       <Presentation />
       <About />
       <Portfolio />
-      {/* <Contact /> */}
+      <Contact />
     </>
   );
 }
