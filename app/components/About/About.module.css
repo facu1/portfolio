@@ -18,6 +18,8 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   object-fit: cover;
   margin: 0 auto;
+  width: 400px;
+  height: auto;
 }
 
 .texts {

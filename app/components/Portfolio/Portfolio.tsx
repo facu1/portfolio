@@ -17,6 +17,7 @@ function Portfolio() {
             code="https://github.com/facu1/movie-catalog"
           >
             <Image
+              priority
               src="/imgs/movie-catalog.png"
               alt="movie catalog preview"
               width={1000}
@@ -26,6 +27,22 @@ function Portfolio() {
           </ProjectCard>
           <ProjectCard
             reverse
+            liveDemo="https://todo-list-frontend-seven.vercel.app/"
+            title="Todo List App"
+            desc="A simple to-do list app, with a backend to save todos to a Mongo database, and user auth provided by Auth0. You can manage todos (create, update, delete), and you can see a small report of them."
+            stack={["Vue", "Express", "MongoDB"]}
+            code="https://github.com/facu1/todo-list-frontend"
+          >
+            <Image
+              priority
+              src="/imgs/todo-list-frontend.png"
+              alt="todo list app preview"
+              width={1000}
+              height={1000}
+              className={styles.img}
+            />
+          </ProjectCard>
+          <ProjectCard
             liveDemo="https://wedding-invitation-demo.vercel.app/"
             title="Online Invitations"
             desc="Online invitations, a personal project to make invitations for parties. The invitations are customizable to fit the event. Currently, 3 invitations have been delivered successfully and a 4th is on the way."
@@ -33,6 +50,7 @@ function Portfolio() {
             code="https://github.com/facu1/xv-invitation"
           >
             <Image
+              priority
               src="/imgs/wedding-invitation.png"
               alt="wedding invitation preview"
               width={1000}

@@ -9,10 +9,11 @@ function About() {
         <div className={styles.content}>
           <div className={styles["img-side"]}>
             <Image
+              priority
               src="/imgs/about.jpg"
               alt="about image"
-              width={400}
-              height={350}
+              width={500}
+              height={450}
               className={styles.img}
             />
           </div>
