@@ -1,5 +1,5 @@
 import { PContainer } from "app/components";
-import { About, Portfolio, Presentation } from "./components";
+import { About, Contact, Portfolio, Presentation } from "./components";
 
 export default function Home() {
   return (
@@ -7,6 +7,7 @@ export default function Home() {
       <Presentation />
       <About />
       <Portfolio />
+      <Contact />
     </PContainer>
   );
 }
