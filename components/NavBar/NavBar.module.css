@@ -18,8 +18,7 @@
 }
 
 .links {
-  display: flex;
-  gap: 1rem;
+  display: none;
 }
 
 .link {
@@ -29,4 +28,26 @@
 
 .link:hover {
   color: #c362bd;
+}
+
+.button {
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.button:hover {
+  color: #c362bd;
+}
+
+@media screen and (min-width: 700px) {
+  .button {
+    display: none;
+  }
+
+  .links {
+    display: flex;
+    gap: 1rem;
+  }
 }

@@ -2,7 +2,6 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "./ProjectCard.module.css";
-import { ReactElement } from "react";
 
 interface Props {
   reverse?: boolean;
@@ -11,7 +10,7 @@ interface Props {
   desc: string;
   stack: string[];
   code: string;
-  children: ReactElement;
+  children: React.ReactNode;
 }
 
 function ProjectCard({
