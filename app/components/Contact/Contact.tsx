@@ -2,15 +2,17 @@ import { faLinkedin } from "@fortawesome/free-brands-svg-icons/faLinkedin";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons/faEnvelope";
 import styles from "./Contact.module.css";
 import { ContactMethod } from "./components";
-import { PContainer } from "app/components";
+import { PContainer, PTitles } from "app/components";
 
 function Contact() {
   return (
     <div style={{ width: "100%" }}>
       <PContainer>
         <div className={styles.content}>
-          <h3>CONTACT</h3>
-          <h2>You can contact me with any of the following ways!</h2>
+          <PTitles
+            section="CONTACT"
+            title="You can contact me with any of the following ways!"
+          />
           <div className={styles.methods}>
             <ContactMethod
               icon={faEnvelope}

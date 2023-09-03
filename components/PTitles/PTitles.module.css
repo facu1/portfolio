@@ -1,16 +1,15 @@
-.content {
+.titles {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  padding: 8rem 0;
 }
 
-.content h3 {
+.titles h3 {
   font-size: 1.125rem;
   font-weight: 900;
   color: #c362bd;
 }
 
-.content h2 {
+.titles h2 {
   font-size: 1.5rem;
 }

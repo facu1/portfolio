@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "./About.module.css";
-import { PContainer } from "app/components";
+import { PContainer, PTitles } from "app/components";
 
 function About() {
   return (
@@ -17,8 +17,10 @@ function About() {
             />
           </div>
           <div className={styles.texts}>
-            <h3>ABOUT ME</h3>
-            <h2>A dedicated Full Stack Developer.</h2>
+            <PTitles
+              section="ABOUT ME"
+              title="A dedicated Full Stack Developer."
+            />
             <p>
               As a Full Stack Developer, I possess many skills in differents
               technologies like HTML, CSS, JavaScript, React, Next, Vue, Nuxt,

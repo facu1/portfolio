@@ -18,7 +18,6 @@ function Presentation() {
                 Developer living in Resistencia, Chaco, Argentina.
               </p>
               <div className={styles.links}>
-                <FontAwesomeIcon icon={faLinkedin} className={styles.icon} />
                 <FontAwesomeIcon icon={faGithub} className={styles.icon} />
               </div>
             </div>
