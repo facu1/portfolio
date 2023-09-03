@@ -1,0 +1,13 @@
+.content {
+  width: 100%;
+  background-color: #2d2e32;
+  padding: 3rem 0;
+  color: white;
+  font-weight: bolder;
+}
+
+.container {
+  display: flex;
+  max-width: 60rem;
+  margin: 0 auto;
+}
