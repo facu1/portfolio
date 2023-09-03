@@ -7,12 +7,12 @@
   flex-direction: column;
   justify-content: center;
   gap: 2rem;
+  padding: 6rem 0;
 }
 
 .presentation {
   display: flex;
   flex-direction: column-reverse;
-  margin-top: 6rem;
   text-align: center;
   width: 100%;
   align-items: center;
@@ -97,6 +97,7 @@
   .content {
     height: 100vh;
     gap: 5rem;
+    padding: 0;
   }
   .links {
     justify-content: flex-start;
@@ -108,7 +109,6 @@
   .presentation {
     display: flex;
     flex-direction: row;
-    margin-top: 0;
     text-align: start;
     gap: 2rem;
   }
