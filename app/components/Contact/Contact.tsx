@@ -6,7 +6,7 @@ import { PContainer, PTitles } from "app/components";
 
 function Contact() {
   return (
-    <div style={{ width: "100%" }}>
+    <div id="contact">
       <PContainer>
         <div className={styles.content}>
           <PTitles
@@ -17,12 +17,14 @@ function Contact() {
             <ContactMethod
               icon={faEnvelope}
               type="Mail"
+              refurl="mailto:fg7facu10@gmail.com"
               data="fg7facu10@gmail.com"
             />
             <ContactMethod
               icon={faLinkedin}
               type="Linkedin"
-              data="https://www.linkedin.com/in/facu-gonzalez/"
+              refurl="https://www.linkedin.com/in/facu-gonzalez"
+              data="in/facu-gonzalez"
             />
           </div>
         </div>

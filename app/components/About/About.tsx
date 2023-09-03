@@ -4,7 +4,7 @@ import { PContainer, PTitles } from "app/components";
 
 function About() {
   return (
-    <div style={{ width: "100%" }}>
+    <div id="about">
       <PContainer>
         <div className={styles.content}>
           <div className={styles["img-side"]}>

@@ -1,14 +1,22 @@
+import Link from "next/link";
 import styles from "./NavBar.module.css";
 
 function NavBar() {
   return (
     <div className={styles.navbar}>
-      <h3>Facundo</h3>
+      <Link href="/" className={styles["main-link"]}>
+        Facundo
+      </Link>
       <div className={styles.links}>
-        <h3>Home</h3>
-        <h3>About</h3>
-        <h3>Projects</h3>
-        <h3>Contact</h3>
+        <Link href="/#about" className={styles.link}>
+          About
+        </Link>
+        <Link href="/#projects" className={styles.link}>
+          Projects
+        </Link>
+        <Link href="/#contact" className={styles.link}>
+          Contact
+        </Link>
       </div>
     </div>
   );

@@ -5,16 +5,19 @@ import styles from "./ContactMethod.module.css";
 interface Props {
   icon: IconDefinition;
   type: string;
+  refurl: string;
   data: string;
 }
 
-function ContactMethod({ icon, type, data }: Props) {
+function ContactMethod({ icon, type, refurl, data }: Props) {
   return (
     <div className={styles.content}>
       <FontAwesomeIcon icon={icon} className={styles.icon} />
       <div>
         <h4>{type}</h4>
-        <p>{data}</p>
+        <a href={refurl} target="_blank" rel="noopener noreferrer">
+          {data}
+        </a>
       </div>
     </div>
   );

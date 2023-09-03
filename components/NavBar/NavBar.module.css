@@ -9,9 +9,23 @@
   width: 100%;
   padding: 25px 45px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
+  font-weight: bolder;
+}
+
+.main-link {
+  font-size: 1.25rem;
 }
 
 .links {
   display: flex;
   gap: 1rem;
+}
+
+.link {
+  font-size: 1.125rem;
+  transition: all 0.2s;
+}
+
+.link:hover {
+  color: #c362bd;
 }

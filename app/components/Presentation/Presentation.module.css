@@ -1,3 +1,7 @@
+.section {
+  background-color: #f9f9f9;
+}
+
 .content {
   height: 100vh;
   display: flex;
@@ -36,6 +40,11 @@
 
 .icon {
   width: 1.75rem;
+  transition: all 0.2s;
+}
+
+.icon:hover {
+  color: #c362bd;
 }
 
 .avatar {

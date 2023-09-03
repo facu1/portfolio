@@ -1,13 +1,12 @@
 import Image from "next/image";
 import styles from "./Presentation.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons/faLinkedin";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { PContainer } from "app/components";
 
 function Presentation() {
   return (
-    <div style={{ width: "100%", backgroundColor: "#f9f9f9" }}>
+    <div className={styles.section}>
       <PContainer>
         <div className={styles.content}>
           <div className={styles.presentation}>
@@ -18,7 +17,13 @@ function Presentation() {
                 Developer living in Resistencia, Chaco, Argentina.
               </p>
               <div className={styles.links}>
-                <FontAwesomeIcon icon={faGithub} className={styles.icon} />
+                <a
+                  href="https://github.com/facu1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FontAwesomeIcon icon={faGithub} className={styles.icon} />
+                </a>
               </div>
             </div>
             <Image
@@ -27,6 +32,7 @@ function Presentation() {
               width={1000}
               height={1000}
               className={styles.avatar}
+              priority
             />
           </div>
           <div className={styles.techs}>

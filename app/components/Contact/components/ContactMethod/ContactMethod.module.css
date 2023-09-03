@@ -4,6 +4,11 @@
   gap: 1rem;
 }
 
+.content a:hover {
+  color: #c362bd;
+  transition: all 0.2s;
+}
+
 .icon {
   width: 3rem;
 }
