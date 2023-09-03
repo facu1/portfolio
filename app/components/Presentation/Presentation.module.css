@@ -3,16 +3,18 @@
 }
 
 .content {
-  height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  gap: 5rem;
+  gap: 2rem;
+  padding: 2rem;
 }
 
 .presentation {
   display: flex;
+  flex-direction: column-reverse;
+  margin-top: 6rem;
+  text-align: center;
   width: 100%;
   align-items: center;
   justify-content: space-between;
@@ -25,7 +27,7 @@
 }
 
 .title {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
 }
 
 .text {
@@ -35,6 +37,7 @@
 
 .links {
   display: flex;
+  justify-content: center;
   gap: 1rem;
 }
 
@@ -57,8 +60,10 @@
 
 .techs {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  width: 100%;
+  justify-content: center;
+  gap: 1rem;
 }
 
 .techs p {
@@ -72,10 +77,47 @@
 .list {
   display: flex;
   gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .whitespace {
   display: flex;
   flex-grow: 1;
   flex-basis: 0;
+}
+
+@media screen and (min-width: 500px) {
+  .title {
+    font-size: 3.5rem;
+  }
+}
+
+@media screen and (min-width: 600px) {
+}
+
+@media screen and (min-width: 900px) {
+  .content {
+    height: 100vh;
+    gap: 5rem;
+  }
+  .links {
+    justify-content: flex-start;
+  }
+  .techs {
+    display: flex;
+    flex-direction: row;
+  }
+  .presentation {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0;
+    text-align: start;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .content {
+    padding: 0;
+  }
 }

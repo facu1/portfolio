@@ -1,22 +1,23 @@
 .card {
   display: flex;
-  flex-direction: row;
+  gap: 1rem;
+  flex-direction: column;
   align-items: center;
+  width: min-content;
   background-color: white;
-  width: 100%;
-  height: 350px;
+  margin: 0 auto;
   padding: 1rem;
   border-radius: 15px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
 
-.reverse {
+/* .reverse {
   flex-direction: row-reverse;
-}
+} */
 
 .img-container {
   width: 30rem;
-  height: 100%;
+  height: 318px;
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
@@ -27,7 +28,7 @@
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  width: 30%;
+  width: 70%;
   margin: 0 auto;
 }
 
@@ -71,4 +72,25 @@
 
 .icon {
   width: 1rem;
+}
+
+@media screen and (min-width: 1020px) {
+  .card {
+    flex-direction: row;
+    height: 350px;
+    width: 100%;
+    margin: 0;
+  }
+
+  .reverse {
+    flex-direction: row-reverse;
+  }
+
+  .img-container {
+    height: 100%;
+  }
+
+  .txt-container {
+    width: 30%;
+  }
 }
