@@ -10,6 +10,7 @@ interface Props {
   desc: string;
   stack: string[];
   code: string;
+  secondaryCode?: string;
   children: React.ReactNode;
 }
 
@@ -20,6 +21,7 @@ function ProjectCard({
   desc,
   stack,
   code,
+  secondaryCode,
   children,
 }: Props) {
   return (
@@ -49,9 +51,20 @@ function ProjectCard({
             rel="noopener noreferrer"
             className={styles.link}
           >
-            <p>Code</p>
+            <p>{secondaryCode ? "Front" : "Code"}</p>
             <FontAwesomeIcon icon={faGithub} className={styles.icon} />
           </a>
+          {secondaryCode && (
+            <a
+              href={secondaryCode}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.link}
+            >
+              <p>Back</p>
+              <FontAwesomeIcon icon={faGithub} className={styles.icon} />
+            </a>
+          )}
           <a
             href={liveDemo}
             target="_blank"

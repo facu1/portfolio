@@ -32,6 +32,7 @@ function Portfolio() {
             desc="A simple to-do list app, with a backend to save todos to a Mongo database, and user auth provided by Auth0. You can manage todos (create, update, delete), and you can see a small report of them."
             stack={["Vue", "Express", "MongoDB"]}
             code="https://github.com/facu1/todo-list-frontend"
+            secondaryCode="https://github.com/facu1/todo-list-backend"
           >
             <Image
               priority
